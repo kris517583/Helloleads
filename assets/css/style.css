@@ -783,6 +783,32 @@ section {
   color: #2a2c39;
   transition: ease-in-out 0.3s;
 }
+.mround-header
+{
+  display: block;
+  margin: auto;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  left: calc(50% - 75px);
+  z-index: 99999;
+  top: -55px;
+  border: #ef6603 5px solid;
+  border-radius: 180px;
+  background: #ffffff;
+}
+
+.micon
+{
+  font-size: 48px
+}
+.micon::after
+{
+  display: block;
+}
 
 .services .title a:hover {
   color: #ef6603;
