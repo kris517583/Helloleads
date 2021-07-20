@@ -787,23 +787,24 @@ section {
 {
   display: block;
   margin: auto;
-  padding: 10px;
-  width: 150px;
-  height: 150px;
+  padding: 0px;
+  width: 120px;
+  height: 120px;
   text-align: center;
   vertical-align: middle;
   position: absolute;
-  left: calc(50% - 75px);
+  left: calc(50% - 55px);
   z-index: 99999;
-  top: -55px;
+  top: -50px;
   border: #ef6603 5px solid;
   border-radius: 180px;
   background: #ffffff;
+  color: #ef6603;
 }
 
 .micon
 {
-  font-size: 48px
+  font-size: 36px
 }
 .micon::after
 {
