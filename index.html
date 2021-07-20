@@ -328,11 +328,7 @@
             <div class="modal-dialog modal-dialog-centered modal-xl" role="document" style="margin-top:70px">
               <div class="modal-content">
                 <div class="modal-header" style="background:#2a2c39">
-                  <h3 class="title" style="visibility: hidden;">Procure-to-pay</h3>
-                  <div class="mround-header" style="margin: auto;">
-                    <div class="micon text-center"><i class="las la-basketball-ball" style="color:#ef6603;"></i></div>
-                    <p class="mtitle m-0 p-0" style="font-weight:bolder;">Procure to pay</p>
-                  </div>
+                  <h3 class="title text-white m-0">Procure-to-pay</h3>
                   <button type="button" class="close ml-0 text-white" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -403,11 +399,7 @@
             <div class="modal-dialog modal-dialog-centered modal-xl" role="document" style="margin-top:70px">
               <div class="modal-content">
                 <div class="modal-header" style="background:#2a2c39">
-                  <h3 class="title" style="visibility: hidden;">Order-to-cash</h3>
-                  <div class="mround-header" style="margin: auto;">
-                    <div class="micon text-center"><i class="las la-book" style="color:#ef6603;"></i></div>
-                    <p class="mtitle m-0 p-0" style="font-weight:bolder;">Order-to-cash</p>
-                  </div>
+                  <h3 class="title text-white m-0">Order-to-cash</h3>
                   <button type="button" class="close ml-0 text-white" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -435,11 +427,7 @@
             <div class="modal-dialog modal-dialog-centered modal-xl" role="document" style="margin-top:70px">
               <div class="modal-content">
                 <div class="modal-header" style="background:#2a2c39">
-                  <h3 class="title" style="visibility: hidden;">Record-to-report</h3>
-                  <div class="mround-header" style="margin: auto;">
-                    <div class="micon text-center"><i class="las la-file-alt" style="color:#ef6603;"></i></div>
-                    <p class="mtitle m-0 p-0" style="font-weight:bolder;">Record-to-report</p>
-                  </div>
+                  <h3 class="title text-white m-0">Record-to-report</h3>
                   <button type="button" class="close ml-0 text-white" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -467,11 +455,7 @@
             <div class="modal-dialog modal-dialog-centered modal-xl" role="document" style="margin-top:70px">
               <div class="modal-content">
                 <div class="modal-header" style="background:#2a2c39">
-                  <h3 class="title" style="visibility: hidden;">Treasury and cash management</h3>
-                  <div class="mround-header" style="margin: auto;">
-                    <div class="micon text-center"><i class="las la-tachometer-alt" style="color:#ef6603;"></i></div>
-                    <p class="mtitle m-0 p-0" style="font-weight:bolder;">Managing<br>T & C</p>
-                  </div>
+                  <h3 class="title text-white m-0">Treasury and cash management</h3>
                   <button type="button" class="close ml-0 text-white" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -498,11 +482,7 @@
             <div class="modal-dialog modal-dialog-centered modal-xl" role="document" style="margin-top:70px">
               <div class="modal-content">
                 <div class="modal-header" style="background:#2a2c39">
-                  <h3 class="title" style="visibility: hidden;">Payroll and benefits</h3>
-                  <div class="mround-header" style="margin: auto;">
-                    <div class="micon text-center"><i class="las la-globe-americas" style="color:#ef6603;"></i></div>
-                    <p class="mtitle m-0 p-0" style="font-weight:bolder;">Payroll and benefits</p>
-                  </div>
+                  <h3 class="title text-white m-0">Payroll and benefits</h3>
                   <button type="button" class="close ml-0 text-white" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -933,11 +913,15 @@
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validate"></div>
               </div>
+              <div class="text-center">
+              <div id="cptch" class="form-group" style="display: inline-block;"></div>
+              </div>
               <div class="mb-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
+
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
 
@@ -975,6 +959,9 @@
     </div>
   </footer><!-- End Footer -->
   <script src='https://www.google.com/recaptcha/api.js?onload=reacaptchav3&render=6LenoJ0UAAAAABuCJv0s5VksqJdo1OOTCqnGqHgu'></script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+    </script>
       <!-- Recaptcha -->
       <script>
         var reacaptchav3 = function() {
@@ -985,6 +972,14 @@
             });
           });
         }
+      </script>
+      <script>
+        var onloadCallback = function() 
+        {
+        grecaptcha.render('cptch', {
+          'sitekey' : '6LenoJ0UAAAAABuCJv0s5VksqJdo1OOTCqnGqHgu'
+        });
+      };
       </script>
   <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
 
@@ -997,7 +992,7 @@
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-
+   <script src="https://www.google.com/recaptcha/api.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   
