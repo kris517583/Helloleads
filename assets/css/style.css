@@ -328,12 +328,11 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   
   overflow: hidden;
-  position: relative;
-  background: linear-gradient(0deg, #2a2c39 0%, #33364a 100%);
-  background: url("../img/dexfactbg v4.jpg") top center;
-  opacity: 1;
-  background-color:powderblue;
-  position: relative;  
+  /*background-color: linear-gradient(0deg, #2a2c39 0%, #33364a 100%);*/
+  background:#2a2c39 url("../img/dexfactbg v4.jpg") center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 1;  
   padding: 0;
   height: 100vh;
 }
