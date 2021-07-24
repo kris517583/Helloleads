@@ -215,6 +215,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.nav-item{
+  margin: auto;
+}
+
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
@@ -687,24 +691,22 @@ section {
 }
 .top10list li img
 {
-  width: 100px;
-  padding-bottom: 15px;
+  width: 70px;
+  padding-right: 15px;
 }
 .top10list li p
 {
-  font-size: 14px;
+  font-size: 18px;
+  padding-left: 1rem;
+  margin: 0;
 }
 .top10list li
 {
-  display: block;
-  margin-top: 1.5rem!important;
-  margin-bottom: 1.5rem!important;
-  border-radius: 10px;
-  text-align: center;
-  width: 70%;
-  margin: auto;
-  padding: 30px 10px 30px 10px !important;
-  box-shadow: 0 2px 29px 0 rgba(68, 88, 144, 0.12);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding-bottom: 2rem; 
+  font-weight: 600;
 }
 /*--------------------------------------------------------------
 # Cta
