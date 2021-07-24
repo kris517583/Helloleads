@@ -73,12 +73,12 @@
       <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="row carousel-container">
-          <div class="col-lg-5">
+          <div class="col-lg-5 mt-5">
             <img src="assets/img/dexfactbg v4.jpg" class="img-fluid">
           </div>
           <div class="col-lg-7 mt-5">
           <h2 class="animate__animated animate__fadeInDown">Reliable Finance & Accounting services for your business needs</h2>
-          <p class="animate__animated fanimate__adeInUp" style="font-size:18px">
+          <p class="animate__animated fanimate__adeInUp">
             Strong customer focus | Deep domain knowledge | Operational excellence | Quick turnarounds | Transformation capabilities
             <!--<ul class="herolist text-white text-left">
               <li><i class="ri-check-double-line"></i> Strong customer focus </li>
@@ -88,7 +88,7 @@
               <li><i class="ri-check-double-line"></i> Transformation capabilities </li>
             </ul>-->
           </p>
-          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto mb-5">Read More</a>
           </div>
         </div>
       </div>
@@ -226,7 +226,7 @@
           </div>
           <div class="tab-pane" id="tab-3">
             <div class="row">
-              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 text-center">
                 <h3>Top 10 reasons to outsource your Finance & Accounting Services</h3>
                 <ul class="top10list">
                   <li><img src="assets/img/top10/icon number 1.png"><p>I want to grow my Business.</p></li>
@@ -640,6 +640,31 @@
     </section>
     <!-- End Testimonials Section -->
     <!-- ======= Contact Section ======= -->
+  <section id="clientsclients">
+    <div class="container">
+    <div class="section-title">
+      <h2>Tools</h2>
+      <p>Accounting Software Tools</p>
+    </div>
+    </div>
+    <div id="clients">
+      <div class="clients-wrap">
+        <ul id="clients-list" class="clearfix">
+          <li><img src="assets/img/accounting-logo/p1.png"/></li>
+          <li><img src="assets/img/accounting-logo/p2.png"/></li>
+          <li><img src="assets/img/accounting-logo/p3.png"/></li>
+          <li><img src="assets/img/accounting-logo/p4.png"/></li>
+          <li><img src="assets/img/accounting-logo/p5.png"/></li>
+          <li><img src="assets/img/accounting-logo/p6.png"/></li>
+          <li><img src="assets/img/accounting-logo/p7.png"/></li>
+          <li><img src="assets/img/accounting-logo/p8.png"/></li>
+          <li><img src="assets/img/accounting-logo/p9.png"/></li>
+          <li><img src="assets/img/accounting-logo/p10.png"/></li>
+          <li><img src="assets/img/accounting-logo/p11.png"/></li>
+        </ul>
+      </div><!-- @end .clients-wrap -->
+    </div><!-- @end #clients -->
+  </section>
     <section id="contact" class="contact">
       <div class="container">
 
@@ -836,26 +861,34 @@
   <script src="assets/js/main.js"></script>
   
   <script>
-	function hide1() {
-		$('#Procure-to-pay').modal("hide");
-		return;
-	}
-	function hide2() {
-		$('#Order-to-cash').modal("hide");
-		return;
-	}
-	function hide3() {
-		$('#Record-to-report').modal("hide");
-		return;
-	}
-	function hide4() {
-		$('#Treasury-and-cash-management').modal("hide");
-		return;
-	}
-	function hide5() {
-		$('#Payroll-and-benefits').modal("hide");
-		return;
-	}
+  $(function(){
+    var $clientcarousel = $('#clients-list');
+    var clients = $clientcarousel.children().length;
+    var clientwidth = (clients * 220);
+    $clientcarousel.css('width',clientwidth);
+    var rotating = true;
+    var clientspeed = 0;
+    $('#clients-list li:last').css({'margin-left': '-220px'})
+    var seeclients = setInterval(rotateClients, clientspeed);
+    $(document).on({
+      mouseenter: function(){
+        rotating = false;
+    },
+    mouseleave: function(){
+      rotating = true;
+    }
+  }, '#clients');
+    function rotateClients() {
+      if(rotating != false) {
+        var $first = $('#clients-list li:first');
+        $first.animate({ 'margin-left': '-220px' }, 5000, "linear", function() {
+        $first.remove()
+        $('#clients-list li:last').css({'margin-left': '0'})
+        $('#clients-list li:last').after($first);
+        });
+      }
+    }
+  });
 </script>
 
 </body>
