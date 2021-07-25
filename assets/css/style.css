@@ -334,7 +334,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   position: relative;
   /*background-color: linear-gradient(0deg, #2a2c39 0%, #33364a 100%);*/
-  background:#2a2c39 url('../img/dexfactbg v41.png') center;
+  background:#2a2c39 url('../img/bg1.png') center;
   background-repeat: no-repeat;
   background-size: contain;
   padding: 0;
@@ -696,7 +696,6 @@ section {
 }
 .top10list li p
 {
-  font-size: 18px;
   padding-left: 1rem;
   margin: 0;
 }
@@ -706,7 +705,6 @@ section {
   align-items: center;
   text-align: left;
   padding-bottom: 2rem; 
-  font-weight: 600;
 }
 /*--------------------------------------------------------------
 # Cta
@@ -1725,6 +1723,8 @@ section {
 .modalli li
 {
   display:inline-flex;
+  width: 100%;
+  padding-bottom: 1rem;
 }
 .modalli li i
 {
