@@ -1025,6 +1025,7 @@ section {
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 auto 15px auto;
+  min-height: 180px;
 }
 
 .testimonials .owl-nav, .testimonials .owl-dots {
