@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/i11.png" rel="icon">
+  <link href="assets/img/i12.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -52,19 +52,20 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
+          <li class="d-none"><a></a></li>
           <li class=""><a href="index.html">Home</a></li>
           <li><a href="index.html#about">About Us</a></li>
           <li><a href="index.html#services">Services</a></li>
           <li><a href="index.html#portfolio">How it Works	</a></li>
-          <li><a href="index.html#pricing">Security</a></li>
           <li class="active"><a href="#faq">FAQ</a></li>          
-          <li><a href="index.html#contact">Contact Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
     </div>
 </header>
 <!-- ======= F.A.Q Section ======= -->
+
 <section id="faq" class="faq ml-0" style="margin-top: 15vh">
   <div class="container">
 
@@ -262,9 +263,81 @@
       </li>
 
     </ul>
-
   </div>
 </section>
+<section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4" data-aos="fade-right">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p>3422 Old Capitol Trail<br>Suite 15 Wilmington, DE 19808,USA</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@dextrasys.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 431 400 1181</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="text-center">
+              <div id="cptch" class="form-group" style="display: inline-block;"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
 <!-- End F.A.Q Section -->
 <!-- ======= Footer ======= -->
 
@@ -274,10 +347,10 @@
       <div class="container">
         <div class="row">
             <ul class="menu text-center row m-auto px-0 justify-content-center" style="list-style:none">
-              <li class=""><a href="#aboutus">About Us</a></li>
-              <li class=""><a href="#services">Services</a></li>
-              <li class=""><a href="#whyus">Top 10 Reasons to outsource</a></li>
-              <li class=""><a href="#howitworks">How It Works</a></li>
+              <li class=""><a href="index.html#about">About Us</a></li>
+              <li class=""><a href="index.html#services">Services</a></li>
+              <li class=""><a href="index.html#t10r">Top 10 Reasons to outsource</a></li>
+              <li class=""><a href="index.html#portfolio">How It Works</a></li>
               <li class=""><a href="#contact">Contact Us</a></li>
               <!--<li><a href="http://dextrasys.com/job_application.html" target="_blank">-->
               <li class="" style="border-right: 0;"><a href="https://www.dextrasys.com/index.html#openings" target="_blank">Jobs</a></li>
@@ -303,7 +376,7 @@
                 <p>Dextrasys Business Services Inc</p>
                 <p>3422 Old Capitol Trail, Suite 15</p>
                 <p>Wilmington, DE 19808, USA</p>
-                <p>+1 (650) 561 6681</p>
+                <p>Tel: +1 (302) 747 - 5836</p>
               </div>
             </div>
           </div>
